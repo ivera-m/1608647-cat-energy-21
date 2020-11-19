@@ -19,13 +19,13 @@
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__list-item main-nav__list-item--active">
+            <li class="main-nav__list-item">
               <a href="index.html">Главная</a>
             </li>
             <li class="main-nav__list-item">
               <a href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="main-nav__list-item">
+            <li class="main-nav__list-item main-nav__list-item--active">
               <a href="form.html">Подбор программы</a>
             </li>
           </ul>
@@ -41,12 +41,12 @@
             кота</p>
 
           <div class="input">
-            <label class="input__label" for="age">Имя:*</label>
-            <input class="input__value" id="name" name="name" placeholder="Барсик" required>
+            <label class="input__label" for="name">Имя:*</label>
+            <input class="input__value" type="text" id="name" name="name" placeholder="Барсик" required>
           </div>
 
           <div class="input">
-            <label class="input__label" for="age">Вес (кг):*</label>
+            <label class="input__label" for="weight">Вес (кг):*</label>
             <input class="input__value" type="number" id="weight" name="weight" placeholder="7" required>
           </div>
 
@@ -56,60 +56,61 @@
           </div>
         </section>
 
-        <section class="goal">
-          <h2 class="visually-hidden">Цель</h2>
+        <fieldset class="goal">
+          <legend class="visually-hidden">Цель</legend>
           <div class="radio">
-            <input class="radio__input" type="radio" name="slim" id="slim" checked>
-            <label class="radio__label" for="slim">Похудениие</label><br>
+            <input class="radio__input" type="radio" name="element" id="slim" value="slim" checked>
+            <label class="radio__label" for="slim">Похудениие</label>
           </div>
           <div class="radio">
-            <input class="radio__input" type="radio" name="weight-gain" id="weight-gain">
-            <label class="radio__label" for="weight-gain">Набор массы</label><br>
+            <input class="radio__input" type="radio" name="element" value="weight-gain" id="weight-gain">
+            <label class="radio__label" for="weight-gain">Набор массы</label>
           </div>
           <div class="radio">
-            <input class="radio__input" type="radio" name="advice" id="advice">
-            <label class="radio__label" for="advice">Не знаю (нужен ваш совет)</label><br>
+            <input class="radio__input" type="radio" name="element" value="advice" id="advice">
+            <label class="radio__label" for="advice">Не знаю (нужен ваш совет)</label>
           </div>
-        </section>
+        </fieldset>
 
-        <section class="information">
-          <h2 class="infotmation__title">Контактные данные (владельца кота)</h2>
+        <fieldset class="information">
+          <legend class="information__title">Контактные данные (владельца кота)</legend>
           <div class="input">
             <label class="input__label" for="email">E-mail:*</label>
             <input class="input__value" type="email" name="email" id="email" placeholder="kuklachev@gmail.com"
-              required><br>
+              required>
           </div>
           <div class="input">
             <label class="input__label" for="tel">Номер телефона</label>
             <input class="input__value" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required>
           </div>
-        </section>
+        </fieldset>
 
-        <section class="commentary">
-          <h2 class="commentary__title">Комментарий</h2>
+        <fieldset class="commentary">
+          <legend class="commentary__title">Комментарий</legend>
+          <label class="visually-hidden" for="comment-field">Расскажите обо всех повадках кота</label>
           <textarea class="commentary__item" name="comment" id="comment-field" rows="7"
             placeholder="Расскажите обо всех повадках кота"></textarea>
-        </section>
+        </fieldset>
 
-        <section class="additional-information">
-          <h2 class="additional-information__title">Дополнительно</h2>
+        <fieldset class="additional-information">
+          <legend class="additional-information__title">Дополнительно</legend>
           <div class="checkbox">
             <input class="checkbox__input" type="checkbox" name="sweetener" id="sweetener" checked>
-            <label class="checkbox__label" for="sweetener">сахарозаменитель</label><br>
+            <label class="checkbox__label" for="sweetener">сахарозаменитель</label>
           </div>
           <div class="checkbox">
             <input class="checkbox__input" type="checkbox" name="water" id="water">
-            <label class="checkbox__label" for="water">питьевая вода</label><br>
+            <label class="checkbox__label" for="water">питьевая вода</label>
           </div>
           <div class="checkbox">
             <input class="checkbox__input" type="checkbox" name="milk" id="milk">
-            <label class="checkbox__label" for="milk">молоко</label><br>
+            <label class="checkbox__label" for="milk">молоко</label>
           </div>
           <div class="checkbox">
             <input class="checkbox__input" type="checkbox" name="vitamins" id="vitamins">
             <label class="checkbox__label" for="vitamins">витамины</label>
           </div>
-        </section>
+        </fieldset>
 
         <button class="submit-application" type="submit">Отправить заявку</button>
         <p class="text-information">* — Обязательные поля</p>
