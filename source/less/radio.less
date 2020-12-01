@@ -1,8 +1,33 @@
 .radio {
-  margin-bottom: 25px;
+  &:last-of-type {
+    .radio__label {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.radio__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.radio__input:checked ~ .radio__label {
+  background-image: url("../img/radiobutton-active.svg");
 }
 
 .radio__label {
+  width: 100%;
+  height: 30px;
+  padding-left: 46px;
+  margin-bottom: 13px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -10,4 +35,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #222222;
+
+  background-image: url("../img/radiobutton.svg");
+  background-repeat: no-repeat;
 }

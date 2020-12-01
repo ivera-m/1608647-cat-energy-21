@@ -112,39 +112,36 @@
           </div>
         </fieldset>
 
-        <fieldset class="information">
-          <legend class="information__title">
-            Контактные данные (владельца кота)
-          </legend>
-          <div class="input">
-            <label class="input__label" for="email">E-mail:*</label>
-            <input
-              class="input__value input__value--email-image"
-              type="email"
-              name="email"
-              id="email"
-              placeholder="kuklachev@gmail.com"
-              required
-            />
+        <div class="information">
+          <div class="information__wrapper">
+            <p class="information__title">Контактные данные (владельца кота)</p>
+            <div class="input">
+              <label class="input__label" for="email">E-mail:*</label>
+              <input
+                class="input__value input__value--email-image"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="kuklachev@gmail.com"
+                required
+              />
+            </div>
+            <div class="input">
+              <label class="input__label" for="tel">Телефон:*</label>
+              <input
+                class="input__value input__value--phone-image"
+                type="tel"
+                name="tel"
+                id="tel"
+                placeholder="8 (960) 900-60-90"
+                required
+              />
+            </div>
           </div>
-          <div class="input">
-            <label class="input__label" for="tel">Телефон:*</label>
-            <input
-              class="input__value input__value--phone-image"
-              type="tel"
-              name="tel"
-              id="tel"
-              placeholder="8 (960) 900-60-90"
-              required
-            />
-          </div>
-        </fieldset>
+        </div>
 
-        <fieldset class="commentary">
-          <legend class="commentary__title">Комментарий</legend>
-          <label class="visually-hidden" for="comment-field"
-            >Расскажите обо всех повадках кота</label
-          >
+        <div class="commentary">
+          <p class="commentary__title">Комментарий</p>
           <textarea
             class="commentary__item"
             name="comment"
@@ -152,53 +149,55 @@
             rows="7"
             placeholder="Расскажите обо всех повадках кота"
           ></textarea>
-        </fieldset>
+        </div>
 
-        <fieldset class="additional-information">
-          <legend class="additional-information__title">Дополнительно</legend>
-          <div class="checkbox">
-            <input
-              class="checkbox__input"
-              type="checkbox"
-              name="sweetener"
-              id="sweetener"
-              checked
-            />
-            <label class="checkbox__label" for="sweetener"
-              >сахарозаменитель</label
-            >
-          </div>
+        <div class="additional-information">
+          <div class="additional-information__wrapper">
+            <p class="additional-information__title">Дополнительно</p>
+            <div class="checkbox">
+              <input
+                class="checkbox__input"
+                type="checkbox"
+                name="sweetener"
+                id="sweetener"
+                checked
+              />
+              <label class="checkbox__label" for="sweetener"
+                >сахарозаменитель</label
+              >
+            </div>
 
-          <div class="checkbox">
-            <input
-              class="checkbox__input"
-              type="checkbox"
-              name="water"
-              id="water"
-            />
-            <label class="checkbox__label" for="water">питьевая вода</label>
-          </div>
+            <div class="checkbox">
+              <input
+                class="checkbox__input"
+                type="checkbox"
+                name="water"
+                id="water"
+              />
+              <label class="checkbox__label" for="water">питьевая вода</label>
+            </div>
 
-          <div class="checkbox">
-            <input
-              class="checkbox__input"
-              type="checkbox"
-              name="milk"
-              id="milk"
-            />
-            <label class="checkbox__label" for="milk">молоко</label>
-          </div>
+            <div class="checkbox">
+              <input
+                class="checkbox__input"
+                type="checkbox"
+                name="milk"
+                id="milk"
+              />
+              <label class="checkbox__label" for="milk">молоко</label>
+            </div>
 
-          <div class="checkbox">
-            <input
-              class="checkbox__input"
-              type="checkbox"
-              name="vitamins"
-              id="vitamins"
-            />
-            <label class="checkbox__label" for="vitamins">витамины</label>
+            <div class="checkbox">
+              <input
+                class="checkbox__input"
+                type="checkbox"
+                name="vitamins"
+                id="vitamins"
+              />
+              <label class="checkbox__label" for="vitamins">витамины</label>
+            </div>
           </div>
-        </fieldset>
+        </div>
 
         <button class="submit-application button" type="submit">
           Отправить заявку

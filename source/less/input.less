@@ -2,6 +2,10 @@
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .input__label {
@@ -25,26 +29,23 @@
   border-radius: 0;
   box-sizing: border-box;
 
-  &::-webkit-input-placeholder {
-    font-family: "Oswald", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #444444;
+  text-transform: uppercase;
 
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-
-    color: #444444;
-  }
+  background-position: 95% 50%;
+  background-repeat: no-repeat;
 }
 
 .input__value--email-image {
   background-image: url("../img/email-image.svg");
-  background-repeat: no-repeat;
+  padding: 13px 43px 13px 16px;
 }
 
 .input__value--phone-image {
   background-image: url("../img/phone-image.svg");
-  background-repeat: no-repeat;
+  padding: 13px 43px 13px 16px;
 }
